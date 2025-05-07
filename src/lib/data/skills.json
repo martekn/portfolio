@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Skill1",
+    "image": "skill1.png"
+  },
+  {
+    "name": "Skill2",
+    "image": "skill2.png"
+  },
+  {
+    "name": "Skill3",
+    "image": "skill3.png"
+  },
+  {
+    "name": "Skill4",
+    "image": "skill4.png"
+  },
+  {
+    "name": "Skill5",
+    "image": "skill5.png"
+  }
+]
