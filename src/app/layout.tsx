@@ -2,6 +2,8 @@ import "./globals.css";
 
 import React from "react";
 
+import { sourceCodePro, roboto } from "./fonts";
+
 const RootLayout = ({
   children,
 }: Readonly<{
@@ -9,7 +11,7 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${sourceCodePro.variable} ${roboto.variable} min-h-screen antialiased`}>{children}</body>
     </html>
   );
 };
