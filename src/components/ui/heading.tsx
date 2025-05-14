@@ -13,7 +13,7 @@ const headingStyles = cva("text-primary-100 font-accent font-medium", {
       heading2: "text-3xl md:text-4xl",
       heading3: "text-2xl md:text-3xl",
       heading4: "text-xl md:text-2xl",
-      heading5: "text-base md:text-xl",
+      heading5: "text-lg md:text-xl",
       heading6: "text-base",
     },
   },
