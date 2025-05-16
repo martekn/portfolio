@@ -6,7 +6,6 @@
   --font-accent: var(--font-source-code-pro), "Courier New", monospace;
 
   --color-primary-100: #dedeef;
-  --color-primary-1200: #d2d2e6;
   --color-primary-200: #c8ccfc;
   --color-primary-300: #c3b8fe;
   --color-primary-400: #a7a7ff;
@@ -14,6 +13,7 @@
   --color-primary-600: #2d2858;
   --color-primary-700: #26252e;
   --color-primary-800: #151515;
+  --color-primary-900: #0c0c11;
 
   --breakpoint-xs: 25rem;
   --breakpoint-sm: 40rem;
