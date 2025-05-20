@@ -1,11 +1,11 @@
 export type Project = {
-  image: { lg: string; sm: string };
+  image: { wide?: string; default: string };
   id: number;
   title: string;
   techStack: string[];
   repoLink: string;
   demoLink: string;
-  description: string;
+  description: string[];
 };
 
 export type Skill = {
@@ -13,6 +13,4 @@ export type Skill = {
   image: string;
 };
 
-export type AboutMe = {
-  aboutMe: string[];
-};
+export type AboutMe = string[];
