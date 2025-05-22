@@ -1,5 +1,7 @@
+export type Image = { alt: string; src: string };
+
 export type Project = {
-  image: { wide?: string; default: string };
+  image: { wide?: Image; default: Image };
   id: number;
   title: string;
   techStack: string[];
@@ -10,7 +12,7 @@ export type Project = {
 
 export type Skill = {
   name: string;
-  image: string;
+  image: Image;
 };
 
 export type AboutMe = string[];
