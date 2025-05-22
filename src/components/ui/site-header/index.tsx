@@ -4,6 +4,7 @@ import DesktopNav from "./desktop-nav";
 import MobileNav from "./mobile-nav";
 import Link from "next/link";
 import Image from "next/image";
+import SocialNav from "./social-nav";
 
 const SiteHeader = () => {
   return (
@@ -15,6 +16,7 @@ const SiteHeader = () => {
         </Link>
         <DesktopNav />
         <MobileNav />
+        <SocialNav className="fixed bottom-4 left-4 z-20" />
       </header>
     </Container>
   );
