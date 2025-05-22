@@ -15,14 +15,14 @@ const ProjectCard = ({ project, size }: ProjectCardProps) => {
     <div className=" space-y-6 ">
       {isWide && project.image.wide && (
         <div className="max-md:hidden">
-          <AspectRatio ratio={5 / 2} className="bg-primary-500/20 rounded-sm ">
+          <AspectRatio ratio={5 / 2} className="bg-primary-500/20 rounded-sm  backdrop-blur-xl">
             <Image src={project.image.wide} alt="" className="object-contain w-full" fill />
           </AspectRatio>
         </div>
       )}
 
       <div className={isWide && project.image.wide ? "md:hidden" : ""}>
-        <AspectRatio ratio={3 / 2} className="bg-primary-500/20 rounded-sm">
+        <AspectRatio ratio={3 / 2} className="bg-primary-500/20 rounded-sm backdrop-blur-xl">
           <Image src={project.image.default} alt="" className="object-contain w-full" fill />
         </AspectRatio>
       </div>

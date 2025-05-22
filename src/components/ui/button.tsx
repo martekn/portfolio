@@ -9,16 +9,17 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary-500/30 text-primary-foreground shadow-xs hover:bg-primary-500/50 shadow-sm",
-        ghost: "hover:bg-primary-500/50 hover:text-primary-100",
-        link: "text-primary-200 underline-offset-4 hover:underline",
+        default:
+          "bg-primary-500/30 text-primary-foreground backdrop-blur-xl shadow-xs hover:bg-primary-500/50 shadow-sm",
+        ghost: "hover:bg-primary-500/50 hover:text-primary-100 hover:backdrop-blur-xl",
+        link: "text-primary-300 underline-offset-4 hover:underline font-base",
       },
       size: {
         default: "h-10 px-4 py-2 has-[>svg]:px-3",
         sm: "h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5",
-        lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
+        lg: "h-11 rounded-md px-6 has-[>svg]:px-4",
         icon: "size-10",
-        inline: "text-primary underline-offset-4 hover:underline p-0 h-auto font-normal font-base",
+        inline: "p-0 h-auto",
       },
       rounded: {
         default: "rounded-sm",

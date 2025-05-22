@@ -16,7 +16,7 @@ export const SkillsList = () => {
 
 export const SkillCard = ({ image, title }: { image: string; title: string }) => {
   return (
-    <div className="flex rounded-sm items-center gap-2 p-2 bg-primary-500/20 font-accent text-base">
+    <div className="flex rounded-sm items-center gap-2 p-2 bg-primary-500/20 font-accent backdrop-blur-xl text-base">
       <Image src={image} alt="" width={100} height={100} className="size-6" />
       <span>{title}</span>
     </div>
