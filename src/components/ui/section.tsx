@@ -10,7 +10,7 @@ const sectionStyles = cva("", {
       disabled: "",
       xs: "my-6",
       sm: "my-16",
-      lg: "my-16 md:my-32",
+      lg: "my-16 md:my-38",
     },
     innerSpacing: { disabled: "", xs: "py-6", sm: "py-16", lg: "py-16 md:py-32" },
   },
@@ -22,11 +22,12 @@ const sectionStyles = cva("", {
 
 type SectionStylesProps = VariantProps<typeof sectionStyles>;
 
-type SectionProps = SectionStylesProps & {
-  children: React.ReactNode;
-  className?: string;
-  asChild?: boolean;
-};
+type SectionProps = SectionStylesProps &
+  React.HTMLAttributes<HTMLElement> & {
+    children: React.ReactNode;
+    className?: string;
+    asChild?: boolean;
+  };
 
 const Section = ({ variant, innerSpacing, children, className, asChild, ...props }: SectionProps) => {
   const Comp = asChild ? Slot : "section";
