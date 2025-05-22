@@ -19,7 +19,7 @@ const HomePage = () => {
     <div>
       <Hero />
 
-      <Section variant="lg" className="space-y-8 mt-0 " id="projects">
+      <Section variant="disabled" className="space-y-8 scroll-mt-8" id="projects">
         <Heading tag="h2" decoration={"underline"} variant={"heading3"}>
           Projects
         </Heading>
@@ -35,17 +35,21 @@ const HomePage = () => {
         </ul>
       </Section>
 
-      <Section variant="lg" className="grid lg:grid-cols-5 gap-y-8 gap-x-20">
+      <Section variant="lg" className="grid lg:grid-cols-5 gap-y-8 gap-x-20 ">
         <Heading tag="h2" decoration={"underline"} variant={"heading3"} className="col-span-full">
           About me
         </Heading>
-        <Section variant="disabled" className="lg:col-span-2 lg:col-start-4 space-y-6" id="skills">
+        <Section variant="disabled" className="lg:col-span-2 lg:col-start-4 space-y-6 scroll-mt-26" id="skills">
           <Heading tag="h3" variant={"heading4"}>
             Skills
           </Heading>
           <SkillsList />
         </Section>
-        <Section variant="disabled" className="lg:col-span-3 lg:col-start-1 lg:row-start-2 space-y-6" id="about">
+        <Section
+          variant="disabled"
+          className="lg:col-span-3 lg:col-start-1 lg:row-start-2 space-y-6 scroll-mt-8 lg:scroll-mt-26"
+          id="about"
+        >
           <Heading tag="h3" variant={"heading4"}>
             Who am I?
           </Heading>
@@ -57,7 +61,7 @@ const HomePage = () => {
         </Section>
       </Section>
 
-      <Section variant="lg" className="grid lg:grid-cols-5 gap-y-8 gap-x-20" id="contact">
+      <Section variant="lg" className="grid lg:grid-cols-5 gap-y-8 gap-x-20 scroll-mt-8" id="contact">
         <Heading tag="h2" decoration={"underline"} variant={"heading3"} className="col-span-full">
           Contact me
         </Heading>
