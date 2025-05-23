@@ -13,8 +13,9 @@ export const generateStaticParams = () => {
   }));
 };
 
-export const generateMetadata = async ({ params }: { params: { id: string } }): Promise<Metadata> => {
-  const project = projects.find((project) => project.id === Number(params.id));
+export const generateMetadata = async ({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> => {
+  const resolvedParams = await params;
+  const project = projects.find((project) => project.id === Number(resolvedParams.id));
 
   if (!project) {
     return {
@@ -29,8 +30,9 @@ export const generateMetadata = async ({ params }: { params: { id: string } }): 
   };
 };
 
-const ProjectPage = ({ params }: { params: { id: string } }) => {
-  const project = projects.find((project) => project.id === Number(params.id));
+const ProjectPage = async ({ params }: { params: Promise<{ id: string }> }) => {
+  const resolvedParams = await params;
+  const project = projects.find((project) => project.id === Number(resolvedParams.id));
 
   if (!project) {
     return <div>Project not found</div>;
@@ -39,7 +41,7 @@ const ProjectPage = ({ params }: { params: { id: string } }) => {
   const { title, image, techStack, repoLink, demoLink, description } = project;
 
   return (
-    <div className="grid lg:grid-cols-2 xl:grid-cols-[75ch_1fr] lg:grid-rows-[auto_auto_1fr] mt-16 gap-8 mb-38">
+    <div className="grid lg:grid-cols-2 xl:grid-cols-[75ch_1fr] lg:grid-rows-[auto_auto_1fr] mt-16 gap-8">
       <Heading tag="h1" variant={"heading2"}>
         {title}
       </Heading>
