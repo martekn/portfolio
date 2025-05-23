@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useRef } from "react";
 import { NAVIGATION_ITEMS } from "@/lib/constants";
 import { useState } from "react";
 import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
@@ -11,15 +11,38 @@ import Link from "next/link";
 const MobileNav = () => {
   const [open, setOpen] = useState(false);
 
+  const triggerRef = useRef<HTMLButtonElement>(null);
+  const linkClickedRef = useRef<boolean>(false);
+
+  const handleLinkClick = () => {
+    linkClickedRef.current = true;
+    setOpen(false);
+  };
+
+  const handleOpenChange = (newOpen: boolean) => {
+    if (!newOpen) {
+      linkClickedRef.current = false;
+    }
+    setOpen(newOpen);
+  };
+
+  const handleCloseAutoFocus = (e: Event) => {
+    e.preventDefault();
+
+    if (!linkClickedRef.current && triggerRef.current) {
+      triggerRef.current.focus();
+    }
+  };
+
   return (
-    <Sheet open={open} onOpenChange={setOpen}>
+    <Sheet open={open} onOpenChange={handleOpenChange}>
       <SheetTrigger asChild>
-        <Button variant="ghost" size="icon" className="md:hidden">
+        <Button ref={triggerRef} variant="ghost" size="icon" className="md:hidden">
           <HamburgerMenuIcon />
         </Button>
       </SheetTrigger>
 
-      <SheetContent side="right" customClose>
+      <SheetContent side="right" customClose onCloseAutoFocus={handleCloseAutoFocus}>
         <SheetHeader className="border-b border-primary-500/20 py-4 flex flex-row justify-between items-center">
           <SheetTitle className="font-accent font-normal">Menu</SheetTitle>
           <SheetClose asChild>
@@ -33,13 +56,7 @@ const MobileNav = () => {
             {NAVIGATION_ITEMS.map((item, index) => (
               <li key={index}>
                 <Button variant={"ghost"} size={"lg"} asChild>
-                  <Link
-                    className={"w-full"}
-                    href={item.path}
-                    onClick={() => {
-                      setOpen(false);
-                    }}
-                  >
+                  <Link className={"w-full"} href={item.path} onClick={handleLinkClick}>
                     {item.title}
                   </Link>
                 </Button>

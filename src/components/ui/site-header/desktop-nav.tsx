@@ -5,13 +5,15 @@ import { Button } from "../button";
 
 const DesktopNav = () => {
   return (
-    <div className="hidden gap-2 md:flex">
+    <ul className="hidden gap-2 md:flex">
       {NAVIGATION_ITEMS.map((item, index) => (
-        <Button asChild key={index} variant={"ghost"} size={"sm"}>
-          <Link href={item.path}>{item.title}</Link>
-        </Button>
+        <li key={index}>
+          <Button asChild variant={"ghost"} size={"sm"}>
+            <Link href={item.path}>{item.title}</Link>
+          </Button>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 };
 
