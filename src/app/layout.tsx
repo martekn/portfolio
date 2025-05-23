@@ -15,7 +15,7 @@ const RootLayout = ({
     <html lang="en">
       <body className={`${sourceCodePro.variable} ${roboto.variable} min-h-screen antialiased `}>
         <BlurredBackground>
-          <div className="min-h-screen">
+          <div className="min-h-screen mb-32">
             <SiteHeader />
             <Container>
               <main>{children}</main>
