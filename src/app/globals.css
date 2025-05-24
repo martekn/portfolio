@@ -31,6 +31,6 @@
     @apply scroll-smooth;
   }
   body {
-    @apply bg-primary-700 text-primary-100 font-base text-base md:text-base;
+    @apply bg-primary-700 text-primary-100 font-base text-base md:text-base leading-7;
   }
 }

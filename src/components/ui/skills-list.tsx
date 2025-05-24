@@ -18,7 +18,7 @@ export const SkillsList = () => {
 export const SkillCard = ({ image, title }: { image: TImage; title: string }) => {
   return (
     <div className="flex rounded-sm items-center gap-2 p-2 bg-primary-500/20 font-accent backdrop-blur-xl text-base">
-      <Image src={image.src} alt={image.alt} width={100} height={100} className="size-6" />
+      <Image src={image.src} alt={image.alt} width={100} height={100} className="max-w-6 max-h-6 object-fit" />
       <span>{title}</span>
     </div>
   );
