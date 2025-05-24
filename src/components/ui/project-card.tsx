@@ -3,9 +3,9 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { headingStyles } from "@/components/ui/heading";
 import { ExternalLinkIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
-import Image from "next/image";
 import Link from "next/link";
-import { AspectRatio } from "./aspect-ratio";
+import ProjectImage from "./project-image";
+import { cn } from "@/lib/utils";
 
 type ProjectCardProps = { project: Project; size: "default" | "wide" };
 
@@ -16,18 +16,16 @@ const ProjectCard = ({ project, size }: ProjectCardProps) => {
   return (
     <div className=" space-y-6 ">
       {isWide && image.wide && (
-        <div className="max-md:hidden">
-          <AspectRatio ratio={5 / 2} className="bg-primary-500/20 rounded-sm  backdrop-blur-xl">
-            <Image src={image.wide.src} alt={image.wide.alt} className="object-contain w-full" fill />
-          </AspectRatio>
-        </div>
+        <Link href={`/project/${id}`} className="max-md:hidden block">
+          <span className="sr-only">{title}</span>
+          <ProjectImage src={image.wide.src} alt={image.wide.alt} ratio="wide" hoverEffect />
+        </Link>
       )}
 
-      <div className={isWide && image.wide ? "md:hidden" : ""}>
-        <AspectRatio ratio={3 / 2} className="bg-primary-500/20 rounded-sm backdrop-blur-xl">
-          <Image src={image.default.src} alt={image.default.alt} className="object-contain w-full" fill />
-        </AspectRatio>
-      </div>
+      <Link href={`/project/${id}`} className={cn("block", isWide && image.wide ? "md:hidden" : "")}>
+        <span className="sr-only">{title}</span>
+        <ProjectImage src={image.default.src} alt={image.default.alt} hoverEffect />
+      </Link>
 
       <div className="space-y-1">
         <div className="flex justify-between items-center gap-4">

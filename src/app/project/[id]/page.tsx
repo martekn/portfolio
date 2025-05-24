@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import { Button } from "@/components/ui/button";
 import { Heading } from "@/components/ui/heading";
-import Image from "next/image";
 import projects from "@/lib/data/projects.json";
 import Link from "next/link";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { ExternalLinkIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
+import ProjectImage from "@/components/ui/project-image";
 
 export const generateStaticParams = () => {
   return projects.map((project) => ({
@@ -45,9 +44,7 @@ const ProjectPage = async ({ params }: { params: Promise<{ id: string }> }) => {
       <Heading tag="h1" variant={"heading2"}>
         {title}
       </Heading>
-      <AspectRatio ratio={3 / 2} className="bg-primary-500/20 backdrop-blur-xl rounded-sm">
-        <Image src={image.default.src} alt={image.default.alt} className="object-contain w-full" fill />
-      </AspectRatio>
+      <ProjectImage src={image.default.src} alt={image.default.alt} />
       <aside className="lg:pl-16 lg:ml-16 lg:border-l border-y lg:border-y-0 border-primary-500/20 lg:space-y-8 lg:col-start-2 lg:row-span-full max-lg:divide-primary-500/20 max-lg:divide-y">
         <section className="space-y-3 max-lg:py-8">
           <Heading tag="h2" variant={"heading5"}>
