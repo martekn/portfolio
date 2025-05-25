@@ -12,7 +12,7 @@ const SiteHeader = () => {
       <header className="py-4 md:py-6 flex justify-between align-middle">
         <Link href="/" className="my-auto">
           <span className="sr-only">M.K. projects</span>
-          <Image src={"logo.png"} alt="" width={300} height={300} className="w-14 md:w-16" />
+          <Image src={"/logo.png"} alt="" width={300} height={300} className="w-14 md:w-16" />
         </Link>
         <DesktopNav />
         <MobileNav />

@@ -2,91 +2,91 @@
   {
     "name": "HTML",
     "image": {
-      "src": "skill-html.png",
+      "src": "/skill-html.png",
       "alt": ""
     }
   },
   {
     "name": "CSS",
     "image": {
-      "src": "skill-css.png",
+      "src": "/skill-css.png",
       "alt": ""
     }
   },
   {
     "name": "Javascript",
     "image": {
-      "src": "skill-javascript.png",
+      "src": "/skill-javascript.png",
       "alt": ""
     }
   },
   {
     "name": "Typescript",
     "image": {
-      "src": "skill-typescript.png",
+      "src": "/skill-typescript.png",
       "alt": ""
     }
   },
   {
     "name": "Vue.js",
     "image": {
-      "src": "skill-vue.png",
+      "src": "/skill-vue.png",
       "alt": ""
     }
   },
   {
     "name": "React",
     "image": {
-      "src": "skill-react.png",
+      "src": "/skill-react.png",
       "alt": ""
     }
   },
   {
     "name": "Next.js",
     "image": {
-      "src": "skill-nextjs.png",
+      "src": "/skill-nextjs.png",
       "alt": ""
     }
   },
   {
     "name": "Vitest",
     "image": {
-      "src": "skill-vitest.png",
+      "src": "/skill-vitest.png",
       "alt": ""
     }
   },
   {
     "name": "Cypress",
     "image": {
-      "src": "skill-cypress.png",
+      "src": "/skill-cypress.png",
       "alt": ""
     }
   },
   {
     "name": "Sass",
     "image": {
-      "src": "skill-sass.png",
+      "src": "/skill-sass.png",
       "alt": ""
     }
   },
   {
     "name": "Tailwind",
     "image": {
-      "src": "skill-tailwind.png",
+      "src": "/skill-tailwind.png",
       "alt": ""
     }
   },
   {
     "name": "Shadcn",
     "image": {
-      "src": "skill-shadcn.png",
+      "src": "/skill-shadcn.png",
       "alt": ""
     }
   },
   {
     "name": "Figma",
     "image": {
-      "src": "skill-figma.png",
+      "src": "/skill-figma.png",
       "alt": ""
     }
   }
