@@ -1,8 +1,8 @@
 [
   {
     "image": {
-      "wide": { "src": "/project-holidaze-wide.png", "alt": "" },
-      "default": { "src": "/project-holidaze.png", "alt": "" }
+      "wide": { "src": "project-holidaze-wide.png", "alt": "" },
+      "default": { "src": "project-holidaze.png", "alt": "" }
     },
     "title": "Holidaze",
     "id": "holidaze",
@@ -21,7 +21,7 @@
   },
   {
     "image": {
-      "default": { "src": "/project-bidquest.png", "alt": "" }
+      "default": { "src": "project-bidquest.png", "alt": "" }
     },
     "title": "Bidquest",
     "id": "bidquest",
@@ -40,7 +40,7 @@
   },
   {
     "image": {
-      "default": { "src": "/project-curio.png", "alt": "" }
+      "default": { "src": "project-curio.png", "alt": "" }
     },
     "title": "Curio",
     "id": "curio",
