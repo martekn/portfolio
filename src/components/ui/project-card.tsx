@@ -35,11 +35,13 @@ const ProjectCard = ({ project, size }: ProjectCardProps) => {
           <div className="flex gap-2">
             <Button size="icon" asChild>
               <Link href={repoLink}>
+                <span className="sr-only">Github repository</span>
                 <GitHubLogoIcon />
               </Link>
             </Button>
             <Button size="icon" asChild>
               <Link href={demoLink}>
+                <span className="sr-only">Live demo</span>
                 <ExternalLinkIcon />
               </Link>
             </Button>

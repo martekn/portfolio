@@ -39,6 +39,7 @@ const MobileNav = () => {
       <SheetTrigger asChild>
         <Button ref={triggerRef} variant="ghost" size="icon" className="md:hidden">
           <HamburgerMenuIcon />
+          <span className="sr-only">Menu</span>
         </Button>
       </SheetTrigger>
 
