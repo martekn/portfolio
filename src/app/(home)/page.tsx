@@ -11,7 +11,8 @@ import Hero from "./components/hero";
 
 export const metadata: Metadata = {
   title: "Frontend developer | MK projects",
-  description: "Placeholder description",
+  description:
+    "Hi, I'm Marte, a recently graduated frontend developer who enjoys creating functional, accessible websites.",
 };
 
 const HomePage = () => {
