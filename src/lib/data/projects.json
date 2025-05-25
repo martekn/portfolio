@@ -1,51 +1,60 @@
 [
   {
     "image": {
-      "wide": { "src": "/project-1-wide.png", "alt": "" },
-      "default": { "src": "/project-1.png", "alt": "" }
+      "wide": { "src": "/project-holidaze-wide.png", "alt": "" },
+      "default": { "src": "/project-holidaze.png", "alt": "" }
     },
-    "title": "Project 1",
-    "id": 1,
-    "techStack": ["item1", "item2", "item3"],
-    "repoLink": "https://github.com/username/project1",
-    "demoLink": "https://demo.com/project1",
+    "title": "Holidaze",
+    "id": "holidaze",
+    "techStack": ["Next.js", "Tailwind", "Typescript", "Shadcn"],
+    "repoLink": "https://github.com/martekn/holidaze",
+    "demoLink": "https://holidaze-omega.vercel.app/",
     "description": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
-      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet."
+      "This was a school project where I got tasked to create a venue booking platform from scratch. The assignment came with a list of requirements and a school-provided API.",
+
+      "I had to plan out the projects carefully to make sure I met the delivery date. I decided to work within sprints and organize tasks into weekly goals. I designed the whole interface myself and used Next.js to handle server side rendering and optimizing SEO. Tailwind CSS and custom shadcn components helped me create a clean and responsive design that looked great on various screen sizes and devices.",
+
+      "One of the biggest hurdles was getting the date picker to work smoothly. It took a lot of trial and error, but I eventually figured it out. Another challenge was dealing with the limitations of the API I was provided, which meant that i had to rethink some parts of my initial design. This project was also the first time I came across lots of version incompatibles, this was a huge struggle to solve and understand as the documentation wasn't as clear as I hoped it would be",
+
+      "Despite all these issues, I have learned a great deal from this project and I have new knowledge to bring with me to the next project I do."
     ]
   },
   {
     "image": {
-      "default": { "src": "/project-2.png", "alt": "" }
+      "default": { "src": "/project-bidquest.png", "alt": "" }
     },
-    "title": "Project 2",
-    "id": 2,
-    "techStack": ["item1", "item2", "item3"],
-    "repoLink": "https://github.com/username/project2",
-    "demoLink": "https://demo.com/project2",
+    "title": "Bidquest",
+    "id": "bidquest",
+    "techStack": ["Vue.js", "Tailwind", "Headless UI", "Vitest", "Cypress"],
+    "repoLink": "https://github.com/martekn/bidquest",
+    "demoLink": "https://bidquest.netlify.app/",
     "description": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
-      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet."
+      "This was my very first proper Vue.js project, and actually the first time I used a framework in a project, which I was both excited and nervous about. This was a school project where we had to create a bidding platform with a provided API. We didn't actually have to use a framework for this assignment, but I wanted to explore new areas and push myself a bit. I had to create a plan for the project, design it and code everything from scratch.",
+
+      "The project allowed me to explore various tools like a framework, single page applications and a headless component library for the first time. Utilizing Vue.js allowed me to setup the project's HTML in a simpler way than before, as I was used to using createElement function. This felt quite amazing, however I also quickly came across issues that I hadn't encountered before, especially tied to single page applications. It was a struggle at first getting used to things not fully resetting or starting over when navigating to a new page. Headless UI was also quite challenging to get started with, as it was difficult to read the documentation and get into a fully functioning component, however it also provided massive benefit for creating accessible components.",
+
+      "In addition to the above I also used unit testing (vitest) and end-to-end testing (cypress) in a large project for the first time. I really see the benefit of having these tests in place, especially for when making changes to the project later on. However this part of development is still fairly new to me, and not something I've explored enough so I'm not entirely accustomed to it yet.",
+
+      "Overall, Bidquest was an amazing learning experience that let me explore a lot of new and interesting tools."
     ]
   },
   {
     "image": {
-      "default": { "src": "/project-3.png", "alt": "" }
+      "default": { "src": "/project-curio.png", "alt": "" }
     },
-    "title": "Project 3",
-    "id": 3,
-    "techStack": ["item1", "item2", "item3"],
-    "repoLink": "https://github.com/username/project3",
-    "demoLink": "https://demo.com/project3",
+    "title": "Curio",
+    "id": "curio",
+    "techStack": ["Next.js", "Styled components", "Sass", "Typescript", "React-Aria"],
+    "repoLink": "https://github.com/martekn/curio",
+    "demoLink": "https://curio-snowy.vercel.app/",
     "description": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
-      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet."
+      "Curio was my very first school project that involved using React, and it was also my first time experimenting with styled-components. The assignment was to create a simplified e-commerce site using an API provided by the school. I had to plan and design the project according to the delivery date, the project requirements and the API limitations. And although this was primarily a React project, I used Next.js as recommended by the React documentation. While I utilized Next.js, I didn't fully leverage its server-side components due to my limited knowledge at the time.",
+
+      "I decided to try out a Sass-based design token system, which seemed like a great idea initially. However, combining this with styled-components proved more challenging than I expected, leading to a lot of confusion. Despite the hurdles, I still appreciate the concept behind design tokens and believe that with better planning and understanding, they could be effectively integrated into future projects.",
+
+      "Another new tool I got to use was React-aria, a headless component library. Working with these components was quite the challenge, especially given the complexity of the components and still being quite new to component libraries. Nonetheless, it provided a valuable opportunity to see how other libraries handle highly reusable and accessible components, experience I can carry forward into my work.",
+
+      "This project gave me invaluable experience in combining different systems like design tokens, Sass, and styled-components. It taught me the importance of thoroughly planning a project and considering how different tools will interact with each other. Overall, Curio was a great learning experience that expanded my knowledge and gave me some insights into benefits and challenges of combining systems and tools."
     ]
   }
 ]

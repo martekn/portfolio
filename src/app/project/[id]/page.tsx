@@ -14,7 +14,7 @@ export const generateStaticParams = () => {
 
 export const generateMetadata = async ({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> => {
   const resolvedParams = await params;
-  const project = projects.find((project) => project.id === Number(resolvedParams.id));
+  const project = projects.find((project) => project.id === resolvedParams.id);
 
   if (!project) {
     return {
@@ -31,7 +31,7 @@ export const generateMetadata = async ({ params }: { params: Promise<{ id: strin
 
 const ProjectPage = async ({ params }: { params: Promise<{ id: string }> }) => {
   const resolvedParams = await params;
-  const project = projects.find((project) => project.id === Number(resolvedParams.id));
+  const project = projects.find((project) => project.id === resolvedParams.id);
 
   if (!project) {
     return <div>Project not found</div>;

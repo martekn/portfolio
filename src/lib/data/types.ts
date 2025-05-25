@@ -2,7 +2,7 @@ export type Image = { alt: string; src: string };
 
 export type Project = {
   image: { wide?: Image; default: Image };
-  id: number;
+  id: string;
   title: string;
   techStack: string[];
   repoLink: string;
