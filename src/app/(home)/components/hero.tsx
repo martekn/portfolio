@@ -21,7 +21,7 @@ const Hero = () => {
             Frontend developer
           </Heading>
           <p className="max-w-xl md:text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis, velit ut luctus
+            {`Hi, I'm Marte, a recently graduated frontend developer who enjoys creating functional, accessible websites.`}
           </p>
         </Container>
       </Section>
