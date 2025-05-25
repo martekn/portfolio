@@ -44,7 +44,7 @@ const ProjectPage = async ({ params }: { params: Promise<{ id: string }> }) => {
       <Heading tag="h1" variant={"heading2"}>
         {title}
       </Heading>
-      <ProjectImage src={image.default.src} alt={image.default.alt} />
+      <ProjectImage src={image.default.src} alt={image.default.alt} hoverEffect />
       <aside className="lg:pl-16 lg:ml-16 lg:border-l border-y lg:border-y-0 border-primary-500/20 lg:space-y-8 lg:col-start-2 lg:row-span-full max-lg:divide-primary-500/20 max-lg:divide-y">
         <section className="space-y-3 max-lg:py-8">
           <Heading tag="h2" variant={"heading5"}>
